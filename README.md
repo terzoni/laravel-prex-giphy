@@ -17,15 +17,20 @@
 
 - Configurar achivo .env
 
+    `GIPHY_API_KEY=9vkkDq57YF0tFZRVsvwldItM6ND6Zhpp`
+    
+    `DB_CONNECTION=mysql`
+    
+    `DB_HOST=127.0.0.1`
+    
+    `DB_PORT=3306`
+  
+    `DB_DATABASE=backend_v1`
+    
+    `DB_USERNAME=backend_user`
+  
+    `DB_PASSWORD=`
 
-    GIPHY_API_KEY=9vkkDq57YF0tFZRVsvwldItM6ND6Zhpp
-
-	DB_CONNECTION=mysql
-	DB_HOST=127.0.0.1
-	DB_PORT=3306
-	DB_DATABASE=backend_v1
-	DB_USERNAME=backend_user
-	DB_PASSWORD=
 
 - Correr el siguiente comando para crear las tablas y usuarios.
 
@@ -36,6 +41,7 @@
 `$ docker exec [NOMBRE CONTENEDOR]-myapp-1 php artisan passport:install`
 
 - Abrir Postman e importar colección de servicios y el Enviroment
+  
   Colección [Descargar](https://drive.google.com/file/d/1PQv7JDY3imT1HMJ9zqQbYcotWe4Vh9uw/view?usp=drive_link)
   Enviroment [Descargar](https://drive.google.com/file/d/1dbw1E_EtVDOX_w69qknmI8Npr9PxY-IJ/view?usp=drive_link)
 
@@ -43,22 +49,24 @@
 
 ###DER
 
-Imagen:
-
 ![](https://i.ibb.co/nMgRv05/DER.png)
 
 ###Diagrama de Casos de Usos
 
 Login (El usuario accedería mediante una API Frontend)
+
 ![](https://i.ibb.co/svBQB9N/CU-01.png)
 
 Administrar GIFs (El usuario accedería mediante una API Frontend)
+
 ![](https://i.ibb.co/PWR71Bx/CU-02.png)
 
 ###Diagrama de Secuencia
 
 CU01 - Loguearse en el sistema
+
 ![](https://i.ibb.co/cw7nWp5/SEQ-CU-01.png)
 
 CU02 - CU03 - CU04
+
 ![](https://i.ibb.co/7nbGSQf/SEQ-CU-020304.png)
